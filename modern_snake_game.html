@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Snake Game</title>
+    <title>Abela Snake Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -22,6 +22,16 @@
             padding: 20px;
             overflow: hidden;
             position: relative;
+            animation: bgMove 10s linear infinite alternate;
+        }
+
+        @keyframes bgMove {
+            0% {
+            background-position: 0% 50%;
+            }
+            100% {
+            background-position: 100% 50%;
+            }
         }
         
         body::before {
@@ -368,6 +378,7 @@
         
         .speed-slider {
             flex: 1;
+            appearance: none;
             -webkit-appearance: none;
             height: 8px;
             border-radius: 4px;
@@ -423,7 +434,7 @@
     <div class="game-container">
         <div class="header">
             <div class="title">
-                <i class="fas fa-snake"></i>
+                <i class="fas fa-dragon"></i>
                 <h1>Modern Snake Game</h1>
             </div>
             <div class="score-container">
@@ -753,6 +764,8 @@
                 finalScoreDisplay.textContent = score;
                 gameOverScreen.classList.add('active');
             }
+        // Start the game automatically
+        startGame();
         });
     </script>
 </body>
