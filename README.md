@@ -28,7 +28,7 @@ A modern and responsive implementation of the classic Snake 🐍 game, built wit
 
 ## Demo
 
-You can try a live demo here (add your deployed link if available).
+You can try a live demo here (http://abeltadele.io/).
 
 ---
 
